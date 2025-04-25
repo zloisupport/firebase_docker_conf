@@ -1,0 +1,18 @@
+version: '3'
+name: 'MyLittleFireBase'
+services:
+  firebase-emulator:
+    container_name: firebase-emulator
+    build:
+      context: ./common-firebase-emulator
+    image: firebase-emulator:latest
+    ports:
+      - 8080:8080 # FIRESTORE_PORT
+      - 5005:5005 # FIRESTORE_WS_PORT
+      - 4000:4000 # UI_PORT
+      - 9099:9099 # AUTH_PORT
+      - 9000:9000 # AUTH_PORT
+    volumes:
+      - /firebase:/var/lib/firebase:rw
+      - /firebase/data:/var/lib/firebase/data:rw
+    mem_limit: 4g

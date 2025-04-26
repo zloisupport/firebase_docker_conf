@@ -10,10 +10,10 @@ To access ui: https://localhost:4000
 To push
 ```
 docker tag firebase-emulator:latest andreyka26/firebase-emulator:latest
-docker push andreyka26/firebase-emulator:latest
+docker push jhon/firebase-emulator:latest
 ```
 
-https://hub.docker.com/u/andreyka26
+https://hub.docker.com/u/jhon
 
 
 ## Build on your own

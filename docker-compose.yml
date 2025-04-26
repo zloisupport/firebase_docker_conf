@@ -1,5 +1,5 @@
 version: '3'
-name: 'MyLittleFireBase'
+name: 'my-littlefire-base'
 services:
   firebase-emulator:
     container_name: firebase-emulator
